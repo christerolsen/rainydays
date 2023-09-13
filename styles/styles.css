@@ -1,0 +1,537 @@
+/* details
+
+-------------------------*/
+
+/* Color Palette
+Green-ish:
+RGB: 10-54-65
+HEX: #0A3641
+-
+White-ish:
+RGB: 248-248-248
+HEX: #F8F8F8
+-
+Purple-ish:
+RGB: 140-35-72
+HEX: #8C2348
+-
+Grey-ish:
+RGB: 26-26-26
+HEX: #1A1A1A
+-
+Yellow-ish:
+RGB: 140-130-14
+HEX: #8C820E
+-------------------------*/
+
+/*---------- Border Box Fix ----------*/
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*---------- Global styles ----------*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+}
+
+h1,
+h2,
+p {
+  color: #1a1a1a;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 20px;
+}
+
+/*---------- Header ----------*/
+.header-wrapper {
+  background-color: #f8f8f8;
+  display: block;
+  box-shadow: 0 2px 4px 0 rgba(10, 54, 65, 1);
+  height: 150px;
+  min-width: 100%;
+  position: fixed;
+}
+
+.header-top img {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.header-bottom {
+  background-color: #0a3641;
+  overflow: hidden;
+  height: 40px;
+}
+
+ul.header-icons {
+  list-style-type: none;
+  padding: 5px;
+  float: right;
+  margin: 0 auto;
+}
+
+li.header-icons {
+  float: left;
+  padding: 5px;
+  margin: 0;
+}
+
+nav,
+#hamburger-menu {
+  display: none;
+}
+
+nav ul {
+  background-color: #0a3641;
+  list-style-type: none;
+  padding: 0px;
+  float: left;
+  margin-top: 40px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(10, 54, 65, 1);
+  position: absolute;
+}
+
+nav li {
+  float: left;
+  margin: 0px auto;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f8f8f8;
+  padding: 10px;
+  display: block;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #f8f8f8;
+  color: #0a3641;
+  border-bottom-right-radius: 10px;
+  font-weight: bold;
+}
+
+nav a.current-page {
+  background-color: #f8f8f8;
+  color: #0a3641;
+  border-bottom-right-radius: 10px;
+  font-weight: bold;
+}
+
+.hamburger-label {
+  float: left;
+  color: #f8f8f8;
+  padding: 3px 3px 3px 6px;
+  font-size: 1.5em;
+  display: block;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+/*---------- Footer ----------*/
+footer {
+  min-height: 20px;
+  margin: 0 auto;
+}
+
+.footer-wrapper {
+  background-color: #0a3641;
+  padding: 10px;
+  color: #f8f8f8;
+  text-align: center;
+  width: 100% !important;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}
+
+/*---------- Main ----------*/
+
+main {
+  display: flex;
+}
+
+.main-wrapper {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 100%;
+  padding: 175px 5% 100px 5%;
+  margin-right: 50px;
+}
+
+/*---------- Rainydays | Home ----------*/
+.featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 25px;
+}
+
+.featured p {
+  padding: 15px;
+  padding-left: 0;
+  padding-right: 50px;
+}
+
+.featured-prod {
+  border-bottom: solid 1px#0a3641;
+}
+
+/*---------- Rainydays | About ----------*/
+.about-text {
+  max-width: 750px;
+  min-width: 200px;
+  padding: 0px 5% 0px 5%;
+}
+
+/*---------- Rainydays | Contact ----------*/
+.contact-content {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0px 5% 0px 5%;
+}
+
+form#contactForm {
+  max-width: 75%;
+}
+
+textarea {
+  max-width: 75%;
+  min-width: 75%;
+  margin: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+
+input {
+  min-width: 75%;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+
+input#message {
+  height: 100px;
+}
+
+button.contact-form {
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: #0a3641;
+  color: #f8f8f8;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  width: 150px;
+  margin-top: 20px;
+}
+
+button:hover {
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
+  padding-left: 10%;
+}
+
+.validationPass {
+  display: none;
+  color: green;
+  font-style: oblique;
+}
+
+/*---------- Rainydays | Collection ----------*/
+
+a.view-button {
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: #8c2348;
+  color: #f8f8f8;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  width: 100px;
+}
+
+a.view-button:hover {
+  background-color: #f8f8f8;
+  color: #8c2348;
+  font-weight: bold;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.product {
+  display: block;
+  box-shadow: #0a3641 1px 1px 1px;
+  margin: 25px;
+}
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+img.product-img {
+  width: 100%;
+  height: auto;
+}
+
+.product-description {
+  display: block;
+  grid-template-rows: 1fr 1fr;
+  padding: 5%;
+}
+
+/*---------- Rainydays | Jacket View----------*/
+img.jacket-view {
+  max-height: 600px;
+  padding: 25px;
+}
+
+.product-view {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  text-align: left;
+  grid-column-gap: 1px;
+}
+
+/*---------- Rainydays | Checkout ----------*/
+.cart-list {
+  margin: 5% 0 10% 0;
+}
+
+ul#cartList {
+  list-style-type: none;
+}
+
+li.cartItem,
+.cartTotal,
+.cartShipping,
+.cartTopay {
+  margin: 0 auto;
+  min-height: 10%;
+}
+
+li.cartTotal {
+  border-top: double;
+}
+
+li.cartTopay {
+  font-weight: bold;
+  border-bottom: double;
+}
+
+.customer-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+form#checkoutForm {
+  max-width: 75%;
+}
+input {
+  margin: 10px;
+  padding: 10px;
+}
+
+a.checkout-button {
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: #0a3641;
+  color: #f8f8f8;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  width: 150px;
+}
+
+a.checkout-button:hover {
+  background-color: #f8f8f8;
+  color: #0a3641;
+  font-weight: bold;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 1100px) {
+  .jacket-list {
+    grid-template-columns: 1fr;
+  }
+
+  .product-view {
+    display: block;
+  }
+
+  img.list-img {
+    max-height: fill;
+    max-width: fill;
+  }
+
+  h1 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+  .contact-content {
+    display: block;
+  }
+
+  .contact-details {
+    margin-top: 25px;
+  }
+
+  .featured {
+    display: block;
+  }
+
+  .featured p {
+    padding-right: 0px;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 601px) and (max-width: 1279px) {
+  body {
+    background-image: none;
+    background-color: none;
+    background-size: 100% 100%;
+  }
+
+  .hamburger-label {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav ul {
+    margin-top: 0px;
+  }
+
+  .main-wrapper {
+    background-color: #f8f8f8;
+    float: left;
+    margin: 0 auto;
+  }
+
+  a.view-button {
+    font-size: 10px;
+    width: 75px;
+  }
+
+  .featured {
+    display: block;
+  }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1280px) {
+  body {
+    background-image: url(/images/background_img/raindrops_288kB.jpg);
+    background-size: 100% 100%;
+
+    background-attachment: fixed;
+    margin: 0 auto;
+  }
+
+  header,
+  main,
+  footer {
+    width: 1280px;
+    float: center;
+    margin: 0 auto;
+  }
+
+  .header-wrapper {
+    min-width: 1280px;
+  }
+
+  .hamburger-label {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav ul {
+    margin-top: 0px;
+  }
+
+  .main-wrapper {
+    background-color: #f8f8f8;
+    float: left;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 600px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 10px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+  a.view-button {
+    font-size: 10px;
+    width: 75px;
+  }
+
+  .products {
+    display: block;
+  }
+}

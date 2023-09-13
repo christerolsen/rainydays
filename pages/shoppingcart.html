@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rainydays | Shopping Cart" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>Rainydays | Shopping Cart</title>
+
+    <!-- Hotjar Tracking Code for https://boring-edison-e256e4.netlify.app/ 
+      <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2982067,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+      </script>-->
+  </head>
+  <body>
+    <!-- // Header // -->
+    <header>
+      <div class="header-wrapper">
+        <div class="header-top">
+          <a href="/index.html">
+            <img
+              src="/images/logos/rainydays_logo_h90.png"
+              alt="rainydays_logo_h90"
+            />
+          </a>
+        </div>
+        <div class="header-bottom">
+          <label class="hamburger-label" for="hamburger-menu"> &#9776; </label>
+          <input type="checkbox" id="hamburger-menu" />
+          <ul class="header-icons">
+            <li class="header-icons">
+              <img src="/images/icons/search_path.png" alt="search_button" />
+            </li>
+            <li class="header-icons">
+              <a href="/pages/shoppingcart.html">
+                <img
+                  src="/images/icons/shoppingcart_path.png"
+                  alt="shoppingcart"
+                />
+              </a>
+            </li>
+          </ul>
+          <nav>
+            <ul>
+              <li>
+                <a href="/index.html">Home</a>
+              </li>
+              <li><a href="/pages/collection.html">Collection</a></li>
+              <li><a href="/pages/contact.html">Contact</a></li>
+              <li><a href="/pages/about.html">About</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- // Main // -->
+    <main>
+      <div class="main-wrapper">
+        <h1>Shopping Cart</h1>
+        <section class="cart-list">
+          <div class="cart">
+            <ul id="cartList">
+              <li class="cartItem"><p>Rainydays Red | Qty: 1 | $69,99</p></li>
+              <li class="cartItem"><p>Rainydays Red | Qty: 1 | $69,99</p></li>
+              <li class="cartItem"><p>Rainydays Red | Qty: 1 | $69,99</p></li>
+              <li class="cartTotal"><h2>Total | Qty: 3 | $279,96</h2></li>
+              <li class="cartShipping"><p>Shipping cost: $19,99</p></li>
+              <li class="cartTopay"><p>To pay: $299,95</p></li>
+            </ul>
+          </div>
+          <div class="customer-details"></div>
+        </section>
+        <section class="checkout-Form">
+          <div class="contact-form">
+            <h2>Your information</h2>
+            <div class="validationPass">
+              <h3>Thank you for choosing Rainydays!</h3>
+              <p>
+                Your checkout is complete and you will receive a confirmation
+                with receipt and incoive by email. If you have any questions do
+                not hesitate to
+                <a href="/pages/contact.html">contact us</a> through our contact
+                form or by phone.
+              </p>
+              <p>Back to the <a href="/index.html">home page >></a></p>
+            </div>
+            <form id="checkoutForm">
+              <div>
+                <input
+                  name="name"
+                  id="name"
+                  type="text"
+                  placeholder="Name (required)"
+                />
+                <div class="form-error" id="nameError">
+                  Please enter your name
+                </div>
+              </div>
+
+              <div>
+                <input
+                  name="street"
+                  id="street"
+                  type="text"
+                  placeholder="Street (required)"
+                />
+                <div class="form-error" id="streetError">
+                  Please enter your street
+                </div>
+              </div>
+
+              <div>
+                <input
+                  name="zipCode"
+                  id="zipCode"
+                  type="text"
+                  placeholder="Postal / Zip code (required)"
+                />
+                <div class="form-error" id="zipCodeError">
+                  Please enter your street
+                </div>
+              </div>
+
+              <div>
+                <input
+                  name="city"
+                  id="city"
+                  type="text"
+                  placeholder="City (required)"
+                />
+                <div class="form-error" id="cityError">
+                  Please enter your city
+                </div>
+              </div>
+
+              <div>
+                <input
+                  name="email"
+                  id="email"
+                  type="email"
+                  placeholder="Email (required)"
+                />
+                <div class="form-error" id="emailError">
+                  Please enter a valid email address
+                </div>
+              </div>
+
+              <div>
+                <input
+                  name="phone"
+                  id="phone"
+                  type="tel"
+                  placeholder="Phonenumber (required)"
+                />
+                <div class="form-error" id="phoneError">
+                  Your message must at least contain 8 characters
+                </div>
+              </div>
+
+              <button class="contact-form">Checkout</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- // Footer // -->
+    <footer>
+      <div class="footer-wrapper">&copy; 2021 Rainydays, Inc</div>
+    </footer>
+    <script src="/js/checkout.js"></script>
+  </body>
+</html>

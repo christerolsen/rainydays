@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rainydays | Contact" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>Rainydays | Contact</title>
+
+    <!-- Hotjar Tracking Code for https://boring-edison-e256e4.netlify.app/ 
+      <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2982067,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+      </script>-->
+  </head>
+  <body>
+    <!-- // Header // -->
+    <header>
+      <div class="header-wrapper">
+        <div class="header-top">
+          <a href="/index.html">
+            <img
+              src="/images/logos/rainydays_logo_h90.png"
+              alt="rainydays_logo_h90"
+            />
+          </a>
+        </div>
+        <div class="header-bottom">
+          <label class="hamburger-label" for="hamburger-menu"> &#9776; </label>
+          <input type="checkbox" id="hamburger-menu" />
+          <ul class="header-icons">
+            <li class="header-icons">
+              <img src="/images/icons/search_path.png" alt="search_button" />
+            </li>
+            <li class="header-icons">
+              <a href="/pages/shoppingcart.html">
+                <img
+                  src="/images/icons/shoppingcart_path.png"
+                  alt="shoppingcart"
+                />
+              </a>
+            </li>
+          </ul>
+          <nav>
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/pages/collection.html">Collection</a></li>
+              <li>
+                <a class="current-page" href="/pages/contact.html">Contact</a>
+              </li>
+              <li><a href="/pages/about.html">About</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- // Main // -->
+    <main>
+      <div class="main-wrapper">
+        <h1>Contact</h1>
+        <section class="contact-content">
+          <div class="contact-form">
+            <h2>Contact form</h2>
+            <div class="validationPass">
+              <p>Thank you! We will come back to you shortly.</p>
+            </div>
+            <form id="contactForm">
+              <div>
+                <input
+                  name="name"
+                  id="name"
+                  type="text"
+                  placeholder="Name (required)"
+                />
+                <div class="form-error" id="nameError">
+                  Please enter your name
+                </div>
+              </div>
+
+              <div>
+                <input
+                  name="subject"
+                  id="subject"
+                  type="text"
+                  placeholder="Subject (required)"
+                />
+                <div class="form-error" id="subjectError">
+                  Your subject must be at least 10 characters
+                </div>
+              </div>
+
+              <div>
+                <input
+                  name="email"
+                  id="email"
+                  type="email"
+                  placeholder="Email (required)"
+                />
+                <div class="form-error" id="emailError">
+                  Please enter a valid email address
+                </div>
+              </div>
+
+              <div>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Message (required)"
+                ></textarea>
+                <div class="form-error" id="messageError">
+                  Your message must at least contain 25 characters
+                </div>
+              </div>
+
+              <button class="contact-form">Submit</button>
+            </form>
+          </div>
+
+          <div class="contact-details">
+            <div class="head-office">
+              <h2>Head office</h2>
+              <p>
+                Rainydays, Inc<br />123 Some Street, Anywhere<br />AW 12345<br />Nowhere
+              </p>
+            </div>
+            <div class="phone-info">
+              <h2>Phone</h2>
+              <p>
+                (555) 555 1234 → Help desk<br />
+                (555) 555 5678 → Shipping help<br />
+                (555) 555 4321 → Product help<br />
+                (555) 555 8765 → Advertising
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- // Footer // -->
+    <footer>
+      <div class="footer-wrapper">&copy; 2021 Rainydays, Inc</div>
+    </footer>
+    <script src="/js/contact.js"></script>
+  </body>
+</html>
