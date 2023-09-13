@@ -4,7 +4,7 @@
 
 A webshop where you can buy jackets for all kinds of weather and conditions.
 
-- [Live demo on Netlify](https://boring-edison-e256e4.netlify.app/)
+- [Live demo on Netlify](https://rainydays.christerolsen.com)
 
 ## Description
 
